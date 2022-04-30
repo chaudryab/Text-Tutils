@@ -47,7 +47,7 @@ const[alert,setAlert] = useState(null);
         <div className="container">
           <Routes>
               <Route path="/about" 
-              element={<About/>}>
+              element={<About mode={mode} />}>
               </Route>
               <Route path="/" 
               element={<TextForm heading='Enter your text here to analyze' showAlert={showAlert} mode={mode}/>}>
